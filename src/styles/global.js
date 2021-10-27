@@ -15,4 +15,12 @@ export const GlobalStyle = createGlobalStyle`
     background: transparent;
     font-family: 'Poppins', 'Open Sans', sans-serif;
   }
+
+  a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
 `

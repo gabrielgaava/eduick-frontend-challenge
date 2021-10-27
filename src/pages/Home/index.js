@@ -1,43 +1,18 @@
 import React from "react";
-import {FormattedMessage} from 'react-intl'
-import { useLocale } from "../../hooks/Locale";
+// import {FormattedMessage} from 'react-intl';
+import {PageBackground} from './styles';
+
+import Navbar from '../../components/Navbar';
 
 const Home = (props) => {
-
-  const { toogleLocale } = useLocale();
-
   return (
-    <div>
+    <PageBackground>
       <div className="App">
         <header className="App-header">
-          <p>
-            <FormattedMessage 
-              id="home.title"
-              defaultMessage="Não carregou!"
-            />
-            <br />
-            <FormattedMessage 
-              id="home.name"
-              defaultMessage="Não carregou!"
-              values={{ userName: "Gabriel Gava" }}
-            />
-            <br />
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-
-          <button onClick={() => toogleLocale("en-US")}>English</button>
-          <button onClick={() => toogleLocale("pt-BR")}>Portugues</button>
+          <Navbar />
         </header>
       </div>
-    </div>
+    </PageBackground>
   )
 }
 
