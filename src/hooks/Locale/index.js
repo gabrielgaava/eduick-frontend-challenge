@@ -1,4 +1,4 @@
-import {createContext, useContext, useState} from "react";
+import React, {createContext, useState} from "react";
 import {IntlProvider} from 'react-intl'
 
 // Translations
@@ -6,11 +6,7 @@ import Portuguese from '../../lang/pt_BR.json';
 import English from '../../lang/en-US.json';
 
 
-const LocaleContext = createContext({
-  currentLocale: "en-US",
-  lange: English,
-  selectLocale: () => {},
-});
+const LocaleContext = createContext(null);
 
 const LocaleProvider = (props) => {
 
@@ -28,7 +24,7 @@ const LocaleProvider = (props) => {
   }
 
   return (
-    <LocaleContext.Provider value={{currentLocale, messages, selectLocale}}>
+    <LocaleContext.Provider value={{currentLocale, messages, toogleLocale: selectLocale}}>
       <IntlProvider messages={messages} locale={currentLocale}>
         {props.children}
       </IntlProvider>
@@ -36,6 +32,6 @@ const LocaleProvider = (props) => {
   );
 }
 
-const useLocale = () => useContext(LocaleContext);
+const useLocale = () => React.useContext(LocaleContext);
 
 export {useLocale, LocaleProvider};

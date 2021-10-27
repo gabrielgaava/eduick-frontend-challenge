@@ -1,4 +1,19 @@
 {
+
+  "navbar.how": "Como funciona",
+  "navbar.about": "Sobre nós",
+  "navbar.start": "Começar",
+
+  "home.header.white" : "Encontre seu",
+  "home.header.color" : "Melhor Professor",
+  "home.header.paragraph" : "Quer você seja um estudante tentando encontrar seus professores / tutores particulares de línguas ideais ou um professor tentando encontrar ótimos alunos para suas aulas particulares personalizadas!",
+
+  "home.header.inputPlaceholder" : "Digite o que você está procurando",
+  "home.header.teacherButton" : "Sou Professor",
+  "home.header.studentButton" : "Sou estudante",
+  "home.header.searchButton" : "Buscar",
+
+  "home.header." : "Oláaaa, como vai ?",
   "home.title" : "Oláaaa, como vai ?",
   "home.name" : "Ola, {userName}!",
   "teste": "Teeeste"
